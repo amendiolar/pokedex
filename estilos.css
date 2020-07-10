@@ -1,5 +1,5 @@
 header{
-    height: 58px;
+    height: 70px;
 }
 
 .container{
@@ -17,4 +17,8 @@ header{
 
 img{
     height: 170px;
+}
+
+#entradaBusqueda{
+    width: 300px;
 }

@@ -28,6 +28,39 @@ function addImages(num){
 addImages(pokemons.length)
 
 
+
+
+
+// Vincula la variable 'botonBuscar' con el elemento que tenga el id='button-addon1'
+var botonBuscar = document.getElementById('button-addon1')
+
+botonBuscar.addEventListener('click', function(){
+    // FUNCION ANONIMA : no tiene nombre, solo se usa para escuchar el click
+    // Se ejecuta cuando alguien hace click
+    
+    // Tomar lo que la persona escribio 
+      var pokeSearch = document.getElementById('pokeDuda')
+      console.log(pokeSearch.value)
+  
+          for(var i=0; i<pokemons.length; i++){
+            if(pokeSearch.value === pokemons[i].name.english){
+             console.log(pokemons[i].name.english)
+            window.open("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+(i)+".png", 'pokeSearch', 'width=200,height=150')
+            
+            } else {
+            
+            }
+          }
+        })
+
+
+   
+
+
+
+
+
+
 /* VERSION FUNCIONANDO
     function addImage(){
   const container = document.querySelector(".container")
